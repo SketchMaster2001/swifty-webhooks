@@ -48,6 +48,7 @@ open class Webhook {
                     print("[Swifty Webhook] - \(error)")
                     return
                 }
+                return
             }
             task.resume()
             RunLoop.current.run()
