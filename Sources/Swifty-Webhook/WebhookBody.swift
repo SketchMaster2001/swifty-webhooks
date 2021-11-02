@@ -8,6 +8,11 @@
 import Foundation
 
 public struct WebhookBody: Encodable {
-    public let content: String?
-    public let embeds: [Embed]?
+    public var content: String?
+    public var embeds: [Embed]?
+    
+    public init() {
+        self.content = ""
+        self.embeds = nil
+    }
 }
