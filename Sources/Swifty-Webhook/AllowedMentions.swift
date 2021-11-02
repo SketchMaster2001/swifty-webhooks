@@ -14,8 +14,8 @@ public enum MentionTypes: String, Encodable {
 }
 
 public struct AllowedMentions: Encodable {
-    public let parse: [MentionTypes]?
-    public let roles: [String]?
-    public let users: [String]?
-    public let repliedUser: Bool?
+    public var parse: [MentionTypes]?
+    public var roles: [String]?
+    public var users: [String]?
+    public var repliedUser: Bool?
 }
